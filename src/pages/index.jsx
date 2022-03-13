@@ -5,6 +5,8 @@ const Home = () => {
   const [file, setFile] = React.useState(null);
   const ref = React.useRef(null);
   console.log(ref);
+  console.log(file);
+
   return (
     <div>
       <input
@@ -17,22 +19,23 @@ const Home = () => {
       />
 
       {Boolean(file) && (
-        <Plyr
-          ref={ref}
-          source={{
-            type: "video",
-            sources: [
-              {
-                src: file,
-              },
-            ],
-          }}
-          options={
-            {
-              /* ... */
-            }
-          }
-        />
+        <div></div>
+        // <Plyr
+        //   ref={ref}
+        //   source={{
+        //     type: "video",
+        //     sources: [
+        //       {
+        //         src: file,
+        //       },
+        //     ],
+        //   }}
+        //   options={
+        //     {
+        //       /* ... */
+        //     }
+        //   }
+        // />
       )}
     </div>
   );
